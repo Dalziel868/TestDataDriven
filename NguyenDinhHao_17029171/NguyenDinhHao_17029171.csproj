@@ -61,7 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Data\UTLab12.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Data\UTLab7.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
