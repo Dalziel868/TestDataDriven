@@ -41,9 +41,12 @@ namespace NguyenDinhHao_17029171
 
             "ÝỲỴỶỸ"
         };
-        private TestContext testContext;
-
-        public TestContext TestContext { get => testContext; set => testContext = value; }
+        private TestContext testContextInstance;
+        public TestContext TestContext
+        {
+            get { return testContextInstance; }
+            set { testContextInstance = value; }
+        }
 
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV",
         @"|DataDirectory|\Data\UTLab7.csv", "UTLab7#csv", DataAccessMethod.Sequential),

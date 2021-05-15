@@ -6,9 +6,12 @@ namespace NguyenDinhHao_17029171
     [TestClass]
     public class UTLab9
     {
-        private TestContext testContext;
-
-        public TestContext TestContext { get => testContext; set => testContext = value; }
+        private TestContext testContextInstance;
+        public TestContext TestContext
+        {
+            get { return testContextInstance; }
+            set { testContextInstance = value; }
+        }
 
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV",
         @"|DataDirectory|\Data\UTLab9.csv", "UTLab9#csv", DataAccessMethod.Sequential),
